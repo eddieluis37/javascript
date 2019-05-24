@@ -6,20 +6,33 @@
     <meta charset="UTF-8">
 </head>
 <!--
-    Realizar la carga del lado de un cuadrado, mostrar por pantalla el perímetro del mismo (El perímetro de un cuadrado se calcula multiplicando el valor del lado por cuatro)
+   Escribir un programa en el cual se ingresen cuatro números, 
+   calcular e informar la suma de los dos primeros y el producto del tercero y el cuarto.
 -->
 
 <body>
     <script>
-        var clave1;
-        var clave2;
+        var num1, num2, num3, num4;
+        var suma, producto;
 
-        clave1 = prompt('Ingrese la primera clave:', '');
-        clave2 = prompt('Ingrese la segunda clave:', '');
+        num1 = prompt('digitar el primer numero', '');
+        num2 = prompt('digitar el segundo numero', '');
+        num3 = prompt('digitar el tercer numero', '');
+        num4 = prompt('digitar el cuarto numero', '');
 
-        if (clave1 == clave2) {
-            document.write('las claves son iguales');
-        }
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+        num3 = parseInt(num3);
+        num4 = parseInt(num4);
+
+        suma = num1 + num2;
+        document.write('la suma de los dos primeros numeros es:' + suma);
+
+        document.write('<br>');
+
+        producto = num3 * num4;
+        document.write('el productodel tercero con el cuarto es: ' + producto);
+
 
     </script>
 
