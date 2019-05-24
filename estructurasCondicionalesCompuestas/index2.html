@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estructura condicionales compuestas</title>
+</head>
+
+<body>
+
+    <script>
+
+        /*
+        Se ingresan tres notas de un alumno, si el promedio es mayor o igual a 4 mostrar un mensaje 'regular', sino 'reprobado'.
+
+        */
+
+        var nota1, nota2, nota3, promedio;
+
+        nota1 = prompt('digite la primera nota', '');
+        nota2 = prompt('digite la segunda nota', '');
+        nota3 = prompt('digite la tercera nota', '');
+        nota1 = parseInt(nota1);
+        nota2 = parseInt(nota2);
+        nota3 = parseInt(nota3);
+
+
+        promedio = (nota1 + nota2 + nota3) / 3
+
+        if (promedio >= 4) {
+            document.write('<br>');
+            document.write('regular');
+        }
+        else {
+            document.write('reprobado');
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
