@@ -7,15 +7,19 @@
 </head>
 
 <!--
- Se ingresa por teclado un valor entero, mostrar una leyenda que indique si el número es positivo, cero o negativo.  
+ 2 Problelma: Se ingresa por teclado un valor entero, 
+ mostrar una leyenda que indique si el número es positivo, cero o negativo.  
 -->
 
 <body>
 
     <script>
+        
         var num;
+        
         num = prompt('Ingrese un valor entero', '');
         num = parseInt(num);
+        
         if (num == 0) {
             document.write('El número ingresado es cero');
         }
@@ -27,6 +31,7 @@
                 document.write('El número ingresado es negativo');
             }
         }
+
     </script>
 
 </body>
