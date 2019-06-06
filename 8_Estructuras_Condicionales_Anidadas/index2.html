@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+
+<!--
+ 2 Problelma: Se ingresa por teclado un valor entero, 
+ mostrar una leyenda que indique si el número es positivo, cero o negativo.  
+-->
+
+<body>
+
+    <script>
+        
+        var num;
+        
+        num = prompt('Ingrese un valor entero', '');
+        num = parseInt(num);
+        
+        if (num == 0) {
+            document.write('El número ingresado es cero');
+        }
+        else {
+            if (num > 0) {
+                document.write('El número ingresado es positivo');
+            }
+            else {
+                document.write('El número ingresado es negativo');
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

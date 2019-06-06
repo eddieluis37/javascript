@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+<!--
+    Confeccionar un programa que permita cargar un número entero positivo de hasta tres cifras y muestre un mensaje indicando si tiene 1, 2, o 3 cifras.
+-->
+
+<body>
+
+    <script>
+        var num;
+        num = prompt('Ingrese un número de 1,2 o 3 dígitos', '');
+        num = parseInt(num);
+        if (num < 10) {
+            document.write('Tiene un dígito');
+        }
+        else {
+            if (num < 100) {
+                document.write('Tiene dos dígitos');
+            }
+            else {
+                document.write('Tiene tres dígitos');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
