@@ -12,14 +12,19 @@
     Mostrar lo que debe abonar el comprador (Ingresar por teclado un precio sin decimales, es decir un entero: 2, 7, 90 etc.)
 -->
   <script>
+
     var precio;
     var cantidad;
+
     precio = prompt('Ingrese precio del artículo', '');
     cantidad = prompt('Ingrese la cantidad de artículos a llevar:', '');
+
     var importe;
     importe = parseInt(precio) * parseInt(cantidad);
+
     document.write('Debe abonar:');
     document.write(importe);
+
   </script>
 
 </body>
